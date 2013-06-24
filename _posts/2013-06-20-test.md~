@@ -1,0 +1,7 @@
+---
+categories: post
+permalink:/:categories/:title/
+layout: default
+title: test
+---
+hei, testime
