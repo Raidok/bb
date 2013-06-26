@@ -9,18 +9,18 @@
         <title>{% if page.title %} {{ page.title }} | {% endif %} bb-kitt</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-	<link rel="icon" href="/bb/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/bb/css/bootstrap.min.css">
+	<!--link rel="icon" href="/favicon.ico" type="image/x-icon"-->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
         <style>
             body {
                 padding-top: 60px;
                 padding-bottom: 40px;
             }
         </style>
-        <link rel="stylesheet" href="/bb/css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="/bb/css/main.css">
-
-        <script src="/bb/js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <base href="/bb/">
+        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -38,9 +38,9 @@
                     <a class="brand" href="#">BB-kitt</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li class="{% if page.url == '/index.html' %}active{% endif %}"><a href="/bb/">Avaleht</a></li>
-                            <li class="{% if page.url contains 'opetused' %}active{% endif %}"><a href="/bb/opetused">Õpetused</a></li>
-                            <li class="{% if page.url contains 'elemendid' %}active{% endif %}"><a href="/bb/elemendid/">Elemendid</a></li>
+                            <li class="{% if page.url == '/index.html' %}active{% endif %}"><a href="/">Avaleht</a></li>
+                            <li class="{% if page.url contains 'opetused' %}active{% endif %}"><a href="/opetused">Õpetused</a></li>
+                            <li class="{% if page.url contains 'elemendid' %}active{% endif %}"><a href="/elemendid/">Elemendid</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
@@ -54,11 +54,11 @@
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/bb/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-        <script src="/bb/js/vendor/bootstrap.min.js"></script>
+        <script src="/js/vendor/bootstrap.min.js"></script>
 
-        <script src="/bb/js/main.js"></script>
+        <script src="/js/main.js"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-41896204-1'],['_trackPageview']];

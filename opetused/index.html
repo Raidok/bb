@@ -6,7 +6,7 @@ title: Õpetused
   {% for post in site.posts %}
   {% if post.categories contains 'opetused' %}
     <li>
-      <a href="/bb/{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
       <p>{{ post.excerpt }}</p>
     </li>
   {% endif %}
